@@ -1,6 +1,9 @@
 import { Module } from 'nest.js';
+import { UsersModule } from './users.module';
 
 @Module({
-    modules: []
+    modules: [
+        UsersModule
+    ]
 })
-export class ApplicationModule {}
+export class ApplicationModule { }

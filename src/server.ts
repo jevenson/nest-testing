@@ -1,5 +1,13 @@
+import * as express from 'express';
+import * as bodyParser from 'body-parser';
 import { NestFactory } from 'nest.js';
 import { ApplicationModule } from './modules/app.module';
 
-const app = NestFactory.create(ApplicationModule);
-app.listen(3000, () => console.log('Application is listening on port 3000.'));
+const instance = express();
+instance.use(bodyParser.json());
+
+const port = 3333;
+
+const app = NestFactory.create(ApplicationModule, instance);
+
+app.listen(port, () => console.log(`Application is listening on port ${port}`));
