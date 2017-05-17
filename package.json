@@ -7,9 +7,14 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@nestjs/common": "*",
+    "@nestjs/core": "*",
+    "@nestjs/websockets": "*",
+    "@nestjs/microservices": "*",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.0.3",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "nest.js": "*",
     "typescript": "^2.2.1"
   },
   "devDependencies": {

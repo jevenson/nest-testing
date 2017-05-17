@@ -1,4 +1,5 @@
-import { Component, HttpException } from 'nest.js';
+import { HttpException } from '@nestjs/core';
+import { Component } from '@nestjs/common';
 import { User } from './../models/user.model';
 
 @Component()

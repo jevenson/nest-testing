@@ -1,5 +1,6 @@
+import { HttpException } from '@nestjs/core';
+import { Middleware, NestMiddleware } from '@nestjs/common';
 import { UsersService } from './../components/users.service';
-import { HttpException, Middleware, NestMiddleware } from 'nest.js';
 
 @Middleware()
 export class AuthMiddleware implements NestMiddleware {
